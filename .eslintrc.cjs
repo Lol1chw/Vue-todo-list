@@ -13,7 +13,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest'
   },
-  ignorePatterns: ['dist', 'node_modules', '.vscode/*'],
+  ignorePatterns: ['dist', 'node_modules', '.vscode/*', 'pnpm-lock.yaml'],
   rules: {
     'vue/attributes-order': ['error']
   }

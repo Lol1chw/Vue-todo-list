@@ -15,12 +15,10 @@ import { store } from '@/store/store'
   </div>
 </template>
 
-
 <style scoped>
 .filter-group {
   color: #ffffff;
   display: flex;
   flex-direction: column;
 }
-
 </style>

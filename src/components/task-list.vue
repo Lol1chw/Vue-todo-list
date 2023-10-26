@@ -54,7 +54,7 @@ console.log(store.tasks.length)
   text-align: center;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   width: 13;
   height: 24px;
 }

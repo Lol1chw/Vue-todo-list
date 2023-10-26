@@ -6,9 +6,9 @@ import taskFilter from '@/components/filter-task.vue'
 
 <template>
   <div class="main">
-    <taskAdd /> 
-    <taskList/>
-    <taskFilter/>
+    <taskAdd />
+    <taskList />
+    <taskFilter />
   </div>
 </template>
 
@@ -18,5 +18,4 @@ import taskFilter from '@/components/filter-task.vue'
   max-width: 500px;
   width: 100%;
 }
-
 </style>
