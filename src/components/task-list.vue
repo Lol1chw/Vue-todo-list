@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { store } from '@/store/store'
 import deleteTask from '@/components/task-delete.vue'
-console.log(store.tasks.length)
 </script>
 
 <template>
