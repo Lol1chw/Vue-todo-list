@@ -1,6 +1,12 @@
 <script setup lang="ts">
 import { store } from '@/store/store'
 import deleteTask from '@/components/task-delete.vue'
+import type { Task } from '@/types/task-list';
+
+function completeTask (task: Task) {
+  task.complete = !task.complete
+  localStorage.setItem('tasks', JSON.stringify(store.tasks))
+}
 </script>
 
 <template>
@@ -15,7 +21,7 @@ import deleteTask from '@/components/task-delete.vue'
         {{ task.title }}
         <div class="control-task">
           <deleteTask :task="task" />
-          <input v-model="task.complete" type="checkbox" @click="task.complete = !task.complete" />
+          <input v-model="task.complete" type="checkbox" @click="completeTask(task)"/>
         </div>
       </li>
     </template>
